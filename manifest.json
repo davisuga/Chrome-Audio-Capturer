@@ -5,8 +5,8 @@
   "description": "This extension captures the audio on the current tab and saves the output file on your computer when the capture is complete",
   "version": "1.1.1",
   "icons": {
-    "128":"icon.png"
-    },
+    "128": "icon.png"
+  },
 
   "browser_action": {
     "default_icon": "icon.png",
@@ -21,7 +21,11 @@
   "permissions": [
     "tabCapture",
     "downloads",
-    "storage"
+    "storage",
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
   ],
   "commands": {
     "start": {
